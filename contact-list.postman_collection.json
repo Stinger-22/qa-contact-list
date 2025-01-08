@@ -1,0 +1,1388 @@
+{
+	"info": {
+		"_postman_id": "a95021de-a68e-41b7-b472-fd54e4fcef3c",
+		"name": "contact-list",
+		"description": "Subject: [https://thinking-tester-contact-list.herokuapp.com/](https://thinking-tester-contact-list.herokuapp.com/)\n\nAPI Documentation: [https://documenter.getpostman.com/view/4012288/TzK2bEa8](https://documenter.getpostman.com/view/4012288/TzK2bEa8)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34116961"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Add User",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Green\",\n    \"email\": \"john.green@mail.com\",\n    \"password\": \"1234567890\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Charter 1. Note 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Green\",\n    \"email\": \"john.green@mail.com\",\n    \"password\": \"1234567890\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730682914&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=axK9FmEMgbtohr6pqX0GAd%2FjWijlo0qJVUzpEhvnHQ4%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730682914&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=axK9FmEMgbtohr6pqX0GAd%2FjWijlo0qJVUzpEhvnHQ4%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxMTExMTExMTExMTExMTExMTExMTExMTEiLCJpYXQiOjE3MzA2ODI5MTR9.q3kWS6FO_tlUh87-PIzt7jSVHuTwYo1aFsgT-bZiWII; Max-Age=684; Path=/; Expires=Mon, 04 Nov 2024 01:26:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"117-RVbh8XfYt9OZ+ppWLk9oZQeo6Z4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:15:14 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"_id\": \"111111111111111111111111\",\n        \"firstName\": \"John\",\n        \"lastName\": \"Green\",\n        \"email\": \"john.green@mail.com\",\n        \"__v\": 1\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxMTExMTExMTExMTExMTExMTExMTExMTEiLCJpYXQiOjE3MzA2ODI5MTR9.q3kWS6FO_tlUh87-PIzt7jSVHuTwYo1aFsgT-bZiWII\"\n}"
+						},
+						{
+							"name": "Charter 1. Note 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730747705&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=ZOszE0Ehh0FLxhi%2BgzXM86cg8c5wP4glL52mvdZGBWc%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730747705&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=ZOszE0Ehh0FLxhi%2BgzXM86cg8c5wP4glL52mvdZGBWc%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "828"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"33c-eKGiSIgdXTXK1LLkoJ1ugrf9K50\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 19:15:05 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"password\": {\n            \"name\": \"ValidatorError\",\n            \"message\": \"Path `password` is required.\",\n            \"properties\": {\n                \"message\": \"Path `password` is required.\",\n                \"type\": \"required\",\n                \"path\": \"password\"\n            },\n            \"kind\": \"required\",\n            \"path\": \"password\"\n        },\n        \"lastName\": {\n            \"name\": \"ValidatorError\",\n            \"message\": \"Path `lastName` is required.\",\n            \"properties\": {\n                \"message\": \"Path `lastName` is required.\",\n                \"type\": \"required\",\n                \"path\": \"lastName\"\n            },\n            \"kind\": \"required\",\n            \"path\": \"lastName\"\n        },\n        \"firstName\": {\n            \"name\": \"ValidatorError\",\n            \"message\": \"Path `firstName` is required.\",\n            \"properties\": {\n                \"message\": \"Path `firstName` is required.\",\n                \"type\": \"required\",\n                \"path\": \"firstName\"\n            },\n            \"kind\": \"required\",\n            \"path\": \"firstName\"\n        }\n    },\n    \"_message\": \"User validation failed\",\n    \"message\": \"User validation failed: password: Path `password` is required., lastName: Path `lastName` is required., firstName: Path `firstName` is required.\"\n}"
+						},
+						{
+							"name": "Charter 1. Note 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Green\",\n    \"password\": \"1234567890\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730683019&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=BKvBKfAXvxrryppvJoS%2BtIAJby%2FV7IOOle9W%2FpE9yDU%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730683019&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=BKvBKfAXvxrryppvJoS%2BtIAJby%2FV7IOOle9W%2FpE9yDU%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"2d-UStF8qUL2UQr7lNfRS7v2APIKHk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:16:59 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Email address is already in use\"\n}"
+						},
+						{
+							"name": "Charter 1. Bug 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Green\",\n    \"email\": \"jo#n.green@mail.com\",\n    \"password\": \"1234567890\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730683714&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=dRWLasnXgM9wx9ahPkGKoex86456vJD83UO%2B11tXCGs%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730683714&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=dRWLasnXgM9wx9ahPkGKoex86456vJD83UO%2B11tXCGs%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzI4MjM0MmJlZDRkYjAwMTM1YjEyNGYiLCJpYXQiOjE3MzA2ODM3MTR9.Me306DuOcymYtKCjEQsg5yxp-zkBc264ywQfMaTC_lk; Max-Age=684; Path=/; Expires=Mon, 04 Nov 2024 01:39:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"117-ftxFMf73/O3ME99E8I0qzgwuDu4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:28:34 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"_id\": \"67282342bed4db00135b124f\",\n        \"firstName\": \"John\",\n        \"lastName\": \"Green\",\n        \"email\": \"jo#n.green@mail.com\",\n        \"__v\": 1\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzI4MjM0MmJlZDRkYjAwMTM1YjEyNGYiLCJpYXQiOjE3MzA2ODM3MTR9.Me306DuOcymYtKCjEQsg5yxp-zkBc264ywQfMaTC_lk\"\n}"
+						},
+						{
+							"name": "BR 4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Green\",\n    \"email\": \"jo#n.green@mail.com\",\n    \"password\": \"1234567890\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/users",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730747059&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=ULjHU7Lb%2FwBpPN37l8SyVQTa7FCe7jtOoGfL6QtMCgQ%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730747059&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=ULjHU7Lb%2FwBpPN37l8SyVQTa7FCe7jtOoGfL6QtMCgQ%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzI5MWFiMzdiZjkzMzAwMTNlMjc0YjUiLCJpYXQiOjE3MzA3NDcwNTl9.c23_p8XPVCdoOFQtuWkz7rd-IXWXeYJwxSToYlQ__oA; Max-Age=684; Path=/; Expires=Mon, 04 Nov 2024 19:15:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"117-tn5SrYwoqTSTrztunej2WM60qNY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 19:04:19 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": {\n        \"_id\": \"67291ab37bf9330013e274b5\",\n        \"firstName\": \"John\",\n        \"lastName\": \"Green\",\n        \"email\": \"jo#n.green@mail.com\",\n        \"__v\": 1\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzI5MWFiMzdiZjkzMzAwMTNlMjc0YjUiLCJpYXQiOjE3MzA3NDcwNTl9.c23_p8XPVCdoOFQtuWkz7rd-IXWXeYJwxSToYlQ__oA\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"John_updated\",\n    \"lastName\": \"Green_updated\",\n    \"email\": \"john.green_updated@mail.com\",\n    \"password\": \"1234567890_updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Charter 1. Note 3",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"111111111111111111111111\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"users",
+										"me"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730682735&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=BVKYq2Mz%2BfVR%2BKS5lv5eGcM6iMEuzi2pP3OUVMF0bLE%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730682735&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=BVKYq2Mz%2BfVR%2BKS5lv5eGcM6iMEuzi2pP3OUVMF0bLE%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1062"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"426-0bfji0J255f36Wc+sW6CyTduAzY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:12:15 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"result\": {\n        \"result\": {\n            \"n\": 0,\n            \"electionId\": \"7fffffff0000000000000352\",\n            \"opTime\": {\n                \"ts\": \"7433225746576834590\",\n                \"t\": 850\n            },\n            \"nModified\": 0,\n            \"ok\": 1,\n            \"$clusterTime\": {\n                \"clusterTime\": \"7433225746576834590\",\n                \"signature\": {\n                    \"hash\": \"MViLh3oQ/606GnW07ELchyuF3ZY=\",\n                    \"keyId\": \"7385634502460047373\"\n                }\n            },\n            \"operationTime\": \"7433225746576834590\"\n        },\n        \"connection\": {\n            \"_events\": {},\n            \"_eventsCount\": 4,\n            \"id\": 1,\n            \"address\": \"18.210.64.216:27017\",\n            \"bson\": {},\n            \"socketTimeout\": 0,\n            \"host\": \"cluster0-shard-00-02.49oul.mongodb.net\",\n            \"port\": 27017,\n            \"monitorCommands\": false,\n            \"closed\": false,\n            \"destroyed\": false,\n            \"lastIsMasterMS\": 1\n        },\n        \"modifiedCount\": 0,\n        \"upsertedId\": null,\n        \"upsertedCount\": 0,\n        \"matchedCount\": 0,\n        \"$where\": {\n            \"_id\": \"111111111111111111111111\"\n        },\n        \"n\": 0,\n        \"electionId\": \"7fffffff0000000000000352\",\n        \"opTime\": {\n            \"ts\": \"7433225746576834590\",\n            \"t\": 850\n        },\n        \"nModified\": 0,\n        \"ok\": 1,\n        \"$clusterTime\": {\n            \"clusterTime\": \"7433225746576834590\",\n            \"signature\": {\n                \"hash\": \"MViLh3oQ/606GnW07ELchyuF3ZY=\",\n                \"keyId\": \"7385634502460047373\"\n            }\n        },\n        \"operationTime\": \"7433225746576834590\"\n    },\n    \"numAffected\": 0,\n    \"filter\": {\n        \"_id\": \"111111111111111111111111\"\n    },\n    \"query\": {\n        \"_id\": \"111111111111111111111111\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log In User",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"john.green@mail.com\",\n    \"password\": \"1234567890\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/users/login",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log Out User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/users/logout",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/users/me",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Testing User entity endponts"
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Add Contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"1968-09-25\",\n    \"email\": \"will.smith@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Charter 2. Note 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"_id\": \"6728256bd1286b001322cafd\",\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"1968-09-25\",\n    \"email\": \"will.smith@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"contacts"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730684277&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=rixY60NuWQnqqdVOoVfDBn%2FB4dpTfSNM6h2bcvRmt9w%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730684277&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=rixY60NuWQnqqdVOoVfDBn%2FB4dpTfSNM6h2bcvRmt9w%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "127"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"7f-74U3r5O7FrySYp2kN1S5x9bxjqo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:37:57 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"driver\": true,\n    \"name\": \"MongoError\",\n    \"index\": 0,\n    \"code\": 11000,\n    \"keyPattern\": {\n        \"_id\": 1\n    },\n    \"keyValue\": {\n        \"_id\": \"6728256bd1286b001322cafd\"\n    }\n}"
+						},
+						{
+							"name": "Charter 2. Bug 1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"3034-03-10\",\n    \"email\": \"will.smith@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"contacts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730685469&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=fXGj5drfdtxtoDQIS7I%2BGesxstTdXFCRYd4Rm1D6ZXg%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730685469&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=fXGj5drfdtxtoDQIS7I%2BGesxstTdXFCRYd4Rm1D6ZXg%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"13a-KEQyW+8sh1wFoavXH5eXiGHsjLk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:57:49 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"67282a1dd1286b001322cb03\",\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"3034-03-10\",\n    \"email\": \"will.smith@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\",\n    \"owner\": \"6728255fd1286b001322cafb\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "Charter 2. Bug 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"1899-10-25\",\n    \"email\": \"will.smith@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"contacts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730685516&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=tvArNUam%2FAcpOltdjDqJ39TooBoNZJ%2Bdak6e87Kw9Lo%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730685516&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=tvArNUam%2FAcpOltdjDqJ39TooBoNZJ%2Bdak6e87Kw9Lo%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"13a-j1Yoq0rfnd8TZnim1EY/rwdWSb0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:58:36 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"67282a4cbed4db00135b125f\",\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"1899-10-25\",\n    \"email\": \"will.smith@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\",\n    \"owner\": \"6728255fd1286b001322cafb\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "BR 10",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"1968-09-25\",\n    \"email\": \"w!ll.s#&?^@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"contacts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730749355&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=7AY%2F2ynugpwImWm0xJ83Y4AIE9NGiJwINMDOXwf43WQ%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730749355&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=7AY%2F2ynugpwImWm0xJ83Y4AIE9NGiJwINMDOXwf43WQ%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"13a-7PC4gv/PMwqwQDn8YO7lni6Bvgg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 19:42:35 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"672923ab7bf9330013e274c8\",\n    \"firstName\": \"Will\",\n    \"lastName\": \"Smith\",\n    \"birthdate\": \"1968-09-25\",\n    \"email\": \"w!ll.s#&?^@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"1 Main St.\",\n    \"street2\": \"Apartment A\",\n    \"city\": \"New York\",\n    \"stateProvince\": \"NY\",\n    \"postalCode\": \"10118\",\n    \"country\": \"USA\",\n    \"owner\": \"67291f767bf9330013e274c1\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Contact List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/{{contactId}}",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts",
+								"{{contactId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Contact",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Will_updated\",\n    \"lastName\": \"Smith_updated\",\n    \"birthdate\": \"1970-10-25\",\n    \"email\": \"will.smith_updated@mail.com\",\n    \"phone\": \"1234567890\",\n    \"street1\": \"Eiffel Tower 35\",\n    \"street2\": \"House 33\",\n    \"city\": \"Paris\",\n    \"stateProvince\": \"PR\",\n    \"postalCode\": \"333333\",\n    \"country\": \"France\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/{{contactId}}",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts",
+								"{{contactId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Charter 2. Note 3",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Will_updated\",\n    \"lastName\": \"Smith_updated\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/{{contactId}}",
+									"protocol": "https",
+									"host": [
+										"thinking-tester-contact-list",
+										"herokuapp",
+										"com"
+									],
+									"path": [
+										"contacts",
+										"{{contactId}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1730684575&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=5xWQKh3P2Lw4VVPXpCxGB44R03NImcr2bBAgc8OESa0%3D\"}]}"
+								},
+								{
+									"key": "Reporting-Endpoints",
+									"value": "heroku-nel=https://nel.heroku.com/reports?ts=1730684575&sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&s=5xWQKh3P2Lw4VVPXpCxGB44R03NImcr2bBAgc8OESa0%3D"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "270"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"10e-Jcl8uZgxqSNLGoDg6pABVtw4VP0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 04 Nov 2024 01:42:55 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"67282691d1286b001322caff\",\n    \"firstName\": \"Will_updated\",\n    \"lastName\": \"Smith_updated\",\n    \"birthdate\": null,\n    \"email\": null,\n    \"phone\": null,\n    \"street1\": null,\n    \"street2\": null,\n    \"city\": null,\n    \"stateProvince\": null,\n    \"postalCode\": null,\n    \"country\": null,\n    \"owner\": \"6728255fd1286b001322cafb\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Patch Contact",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Will_patched\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/{{contactId}}",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts",
+								"{{contactId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearer_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/{{contactId}}",
+							"protocol": "https",
+							"host": [
+								"thinking-tester-contact-list",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"contacts",
+								"{{contactId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Testing Contact entity endponts"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearer_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

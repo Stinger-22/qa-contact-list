@@ -1,0 +1,13 @@
+# IDE
+## VS Code
+.vscode/
+## PyCharm
+.idea/
+
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.benchmarks
